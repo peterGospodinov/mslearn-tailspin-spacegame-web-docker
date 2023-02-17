@@ -33,7 +33,8 @@ stages:
   - job: 'Deploy'
     displayName: 'Deploy job'
     pool:
-      vmImage: 'ubuntu-20.04'
+      name: Default
+    # vmImage: 'ubuntu-20.04'
     variables:
     - group: Release
     steps:
