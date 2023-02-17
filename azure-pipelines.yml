@@ -12,7 +12,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-    name: Default
+      name: Default
     #  vmImage: 'ubuntu-20.04'
     steps:
     - task: Docker@2
@@ -33,7 +33,7 @@ stages:
   - job: 'Deploy'
     displayName: 'Deploy job'
     pool:
-    name: Default
+      name: Default
     #  vmImage: 'ubuntu-20.04'
     variables:
     - group: Release
